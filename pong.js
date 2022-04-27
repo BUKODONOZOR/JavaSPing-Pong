@@ -8,3 +8,14 @@ function dibujarfondo(x,y,w,h,color){
 }
 
 dibujarfondo(0, 0, canvavs.width, canvavs.height, "BLACK"); 
+
+
+function dibujarcirculo(x,y,r,color) {
+    canvatx.fillStyle = color;
+    canvatx.beginPath();
+    canvatx.arc(x,y,r,0,Math.PI*2,false);
+    canvatx.closePath();
+    canvatx.fill();
+}
+
+dibujarcirculo(100,100,50, "RED")
